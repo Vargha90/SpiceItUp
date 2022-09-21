@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Spice It Up!{% endblock %}
+
+{% block imports %}
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/tiles.css">
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="tile" onclick="location.href='/recipes/food'">
+            <img class="big-img" src="/static/img/food.jpg" alt="Various foods">
+            <h3 class="tile-title">Food Recipes</h3>
+            <br><br><br>
+            <p class="tile-description">
+                Browse all of our spicy recipes in one place! Surprise your family with something special, or share
+                your favourite recipe with us!
+            </p>
+        </div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+{% endblock %}

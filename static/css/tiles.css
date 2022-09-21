@@ -1,0 +1,36 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: 725px;
+  padding: 30px;
+  background-color: saddlebrown;
+}
+
+.tile {
+  background-color: tan;
+}
+
+.tile:hover {
+  background-color: #FFE7C9;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.big-img {
+  padding: 15px;
+  width: 570px;
+  height: 380px;
+}
+
+.tile-title {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+  color: saddlebrown;
+}
+
+.tile-description {
+  color: saddlebrown;
+  text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        {% block imports %}{% endblock %}
+    </head>
+
+    <body>
+        <nav class="navbar">
+
+            <!-----LOGO----->
+
+            <div class="logo">Spice It Up!</div>
+
+            <div class="if_logged">
+                You are not logged in!
+                <a href="/">Log in</a> or
+                <a href="/">Register</a>
+            </div>
+
+            <!-----NAVIGATION MENU----->
+
+            <ul class="nav-links">
+
+                <!-----NAVIGATION MENUS----->
+
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li class="services">
+                        <a href="/">Categories</a>
+
+                        <!-----DROPDOWN MENU----->
+
+                        <ul class="dropdown">
+                            <li><a href="/">Soups</a></li>
+                            <li><a href="/">Chicken</a></li>
+                            <li><a href="/">Pork</a></li>
+                            <li><a href="/">Beef</a></li>
+                            <li><a href="/">Noodles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Community</a></li>
+                    <li><a href="/">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        {% block content %} {% endblock %}
+
+        <div class="footer">
+            <p class="footer-text">Thank you for using our site!</p>
+            <p class="footer-text">Follow us on
+                <a href="/">Facebook</a> and
+                <a href="/">Instagram</a>
+            </p>
+        </div>
+    </body>
+</html>
